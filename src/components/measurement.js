@@ -19,18 +19,18 @@ export const Measurement = ({ setResult, data }) => {
     const [newUnitCount, setNewUnitCount] = useState(0);
     const [UnitData, setUnitData] = useState([
     ]);
-
-
+    
+    
     const handleUnitChange = (event) => {
         setUnitValue(event.target.value);
     };
     const handleUnit2Change = (event) => {
         setUnitValue2(event.target.value);
     };
-
+    
     useEffect(() => {
         data && setUnitData(data)
-    }, [UnitData])
+    }, [])
 
     useEffect(() => {
         if (value && unitValue && unitValue2) {
